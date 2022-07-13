@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Plan Maintenance Instructions</title>
+    <link href="/ppmaindir.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mainWrap"></div>
+    <h2>Payment Plan Maintenance</h2>
+    <div>
+            <!-- <div class="para">
+                <p>This CSV file is used to apply the surplus for a property sold at tax sale to taxes that have become due after the sale.
+                Only properties that were sold on the tax sale that generated a surplus will appear on this CSV file.
+                Fill out the form as described below for those properties you want to apply the surplus to subsequent taxes</p>
+                <span>Any properties left blank will be skipped by the system.</span>
+            </div>   -->
+            <div class="card">
+                <span>Select Property</span>
+                <p style="margin-left: 5px; margin-right: 5px">Fill in the appropriate property or sale ID into the Property Selection dialog box and click on the ‘Submit’ button. <u>NOTE:</u> When you begin typing, the system will start to display potential matches to the ID you are typing.</p>
+                <img src="/pppropselect.png" alt="Property Selection">
+
+                <!-- <ol>
+                    <li>Click 'Download CSV file to fill out' button</li>
+                    <li>Open saved document (check downloads folder)</li>
+                    <li>Fill out columns F-J as per the definitions provided below</li>
+                    <li>Save file locally to your computer</li>
+                    <li>Click 'Choose File' button and select your newly saved CSV file</li>
+                    <li>Click 'Upload CSV file to Process' button</li>
+                </ol> -->
+            </div>
+            <div class="card">
+                <span>Payment Plan Details</span>
+                <p style="margin-left: 5px; margin-right: 5px">If the property ID entered has an active payment plan, you will see details of this plan along with the general ability to maintain the plan.  Tasks like record a payment, update the plan status, view/download the agreement and view pay history area available in this area.</p>
+                <img style="width: 100%" src="/ppmain.png" alt="Payment Plan Details">
+                <!-- <ul>
+                    <li>Columns A & B: SALE ID, PROPERTY ID - Are to identify the property</li>
+                    <li>Columns C, D, & E: SURPLUS, SURPLUS WARRANTS, SURPLUS REMAINING show the amount of the surplus, amount of warrants already paid, and how much surplus remains</li>
+                    <li>Columns F, G, H, I, & J: Need to complete as described below</li>
+                </ul> -->
+            </div>
+            <div class="card">
+            <span class="listTitle">Recording a Payment</span>
+            <p style="margin-left: 5px; margin-right: 5px">To record a payment by the property owner, enter the date of the payment followed by the amount and select ‘Save Payment’.   <u>NOTE:</u> You’ll notice the down payment of $100 is also listed here. We used the down payment field when the property owner wanted to make a payment on the same day as the payment plan was created.  </p>
+            <img style="width: 100%" src="/history.png" alt="Down Payment">
+            <p style="margin-left: 5px; margin-right: 5px"><u>NOTE:</u>  The payment of $508 is recorded in the payment history.  Additional payments recorded will fall below the previous payment. All payments will be shown under the Property Maintenance menu item as a partial payment.</p>
+            
+            <!-- <ul>
+                <li><span class="field">DATE (Column F)</span> - Put in the date of the warrant in the format mm/dd/yyyy (EX: 9/11/2021)</li>
+                <li><span class="field">NUMBER (Column G)</span> - Put in the number of the warrant</li>
+                <li><span class="field">PAID TO (Column H)</span> - Put in to whom this warrant will be paid to</li>
+                <li><span class="field">AMOUNT (Column I)</span> - Put in the amount of the warrant without a '$' or commas (EX: $2,123.99 would be entered as 2123.99)</li>
+                <li><span class="field">DESCRIPTION (Column J)</span> - Put in the description for the offset adjustment that will also be entered (EX: Used Surplus for 2021 / Pay 2022)</li>
+            </ul> -->
+            </div>
+            <div class="card">
+            <span class="listTitle">Updating Plan Status</span>
+            <p style="margin-left: 5px; margin-right: 5px">Updating the plan status will allow you to change the overall status of the payment plan using the available options in the pull-down menu. <u>NOTE:</u>  By completing this process, it does not update the status within the system for the parcel itself. Please refer to the section titled Updating Status within Tax Sale System if the county chooses to update the status once a payment plan is activated.</p>
+            <img style="width: 60%" src="/updatestatus.png" alt="Down Payment">
+            <ul>
+                <li> 
+                    ACTIVE:  Payment plan has been activated and is current.
+                    </li>
+                <li>ACTIVE – UNVERIFIED:  Payment plan has been activated but email / SMS hasn’t been verified and is current.</li>
+                <li>ACTIVE – VERIFIED:  Payment plan has been activated and email / SMS has been verified and is current.</li>
+                <li>CLOSED:  Payment plan has been satisfied.</li>
+                <li>CLOSED DELINQUENT:  Payment plan has not been satisfied due to non-payments.</li>
+                <li>DELINQUENT:  Payment plan has been activated but payments are not current.</li>
+                <li>PENDING:  Payment plan has been set up but not activated. <b>**Default payment plan status**</b></li>
+            <!-- <ul>
+                <li><span class="field">DATE (Column F)</span> - Put in the date of the warrant in the format mm/dd/yyyy (EX: 9/11/2021)</li>
+                <li><span class="field">NUMBER (Column G)</span> - Put in the number of the warrant</li>
+                <li><span class="field">PAID TO (Column H)</span> - Put in to whom this warrant will be paid to</li>
+                <li><span class="field">AMOUNT (Column I)</span> - Put in the amount of the warrant without a '$' or commas (EX: $2,123.99 would be entered as 2123.99)</li>
+                <li><span class="field">DESCRIPTION (Column J)</span> - Put in the description for the offset adjustment that will also be entered (EX: Used Surplus for 2021 / Pay 2022)</li>
+            </ul> -->
+            </div>
+    </div>
+</div>
+</body>
+</html>
